@@ -1,0 +1,14 @@
+# From https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#codeowners-syntax
+# A CODEOWNERS file uses a pattern that follows most of the same rules used in
+# gitignore files. The pattern is followed by one or more GitHub usernames or
+# team names using the standard @username or @org/team-name format. Users and
+# teams must have explicit write access to the repository, even if the team's
+# members already have access.
+# If you want to match two or more code owners with the same pattern, all the
+# code owners must be on the same line. If the code owners are not on the same
+# line, the pattern matches only the last mentioned code owner.
+
+# These owners will be the default owners for everything in the repo. Unless a
+# later match takes precedence, @opengovsg/tooling-team will be requested for
+# review when someone opens a pull request.
+* @opengovsg/tooling-team
