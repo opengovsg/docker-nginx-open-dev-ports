@@ -49,10 +49,10 @@ jobs:
           provenance: true
           sbom: true
           tags: |
-            opengovsg/nginx-open-dev-ports:latest
             opengovsg/nginx-open-dev-ports:${{ steps.variables.outputs.major_minor_patch }}
             opengovsg/nginx-open-dev-ports:${{ steps.variables.outputs.major_minor }}
             opengovsg/nginx-open-dev-ports:${{ steps.variables.outputs.major }}
+            opengovsg/nginx-open-dev-ports:latest
         env:
           # https://docs.docker.com/build/ci/github-actions/reproducible-builds/
           SOURCE_DATE_EPOCH: 0
