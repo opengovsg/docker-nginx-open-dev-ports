@@ -2,12 +2,7 @@
 # (`^FROM\s+\S+:\K[0-9]+\.[0-9]+\.[0-9]+`) used in other scripts
 FROM nginx:1.27.1-alpine-slim
 
-# In order to run the Docker image in non-root mode, the nginx binaries need to
-# be opened up to non-root users
-RUN chmod -R a+w /var/cache/nginx/ \
-  && touch /var/run/nginx.pid \
-  && chmod a+w /var/run/nginx.pid \
-  && rm /etc/nginx/conf.d/*
+RUN rm /etc/nginx/conf.d/*
 
 COPY main.conf /etc/nginx/conf.d/
 COPY index.html /usr/share/nginx/html/
@@ -24,5 +19,3 @@ EXPOSE 8000
 EXPOSE 8080
 EXPOSE 8888
 EXPOSE 9000
-
-USER nginx
