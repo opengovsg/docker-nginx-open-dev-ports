@@ -7,7 +7,11 @@ dev: build run
 
 build:
 	@echo "Building image:"
-	docker build -t $(PREFIX):$(TAG) .
+	docker buildx build --platform linux/amd64,linux/arm64 -t $(PREFIX):$(TAG) .
+
+push:
+	@echo "Pushing image:"
+	docker push $(PREFIX):$(TAG)
 
 run:
 	@echo "Running container:"
