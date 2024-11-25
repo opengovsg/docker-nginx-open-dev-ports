@@ -1,6 +1,6 @@
 # docker-nginx-open-dev-ports
 
-This is the Git repo of the Docker "nginx open dev ports image" based on Nginx. It builds an nginx image that opens commonly used ports in development that serves basic HTTP responses.
+This is the Git repo of the Docker "[nginx open dev ports image](https://hub.docker.com/r/opengovsg/nginx-open-dev-ports)" based on nginx. It builds an nginx image that opens commonly used ports in development that serves basic HTTP responses.
 
 ## nginx versions supported
 
@@ -45,12 +45,3 @@ Feel free to add more ports. Remember to update all 3 files at the same time:
 ```shell
 make dev
 ```
-
-## Caveats
-
-To simplify the maintenance work, this repository only publishes:
-
-- `linux/arm64` and `linux/amd64` platforms
-- `alpine-slim` based images
-
-More can be added when needed in the future.
