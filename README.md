@@ -1,6 +1,6 @@
 # docker-nginx-open-dev-ports
 
-This is the Git repo of the Docker "[nginx open dev ports image](https://hub.docker.com/r/opengovsg/nginx-open-dev-ports)" based on nginx. It builds an nginx image that opens commonly used ports in development that serves basic HTTP responses.
+This is the Git repo of the Docker "[nginx open dev ports image](https://hub.docker.com/r/opengovsg/nginx-open-dev-ports)" based on nginx. It builds an nginx image that opens commonly used ports in development that serve basic HTTP responses.
 
 <div align="center">
   <img src="./banner.png" alt="Banner">
