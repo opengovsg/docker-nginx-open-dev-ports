@@ -31,6 +31,7 @@ Port No. | Description (from ChatGPT)
 3001 | Common default port for web development servers (Node.js, React, Express).
 3002 | Common default port for web development servers (Node.js, React, Express).
 4000 | Used by frameworks like Vue.js or certain Ruby on Rails setups.
+4545 | Used by some internal web development servers (Node.js, React, Express).
 5000 | Common for Flask (Python) or other small web frameworks.
 5001 | Often used by other web frameworks (Flask, etc.) in local dev environments.
 8000 | Default for Django (Python) development server.
