@@ -1,6 +1,6 @@
 # Must use versions in `major.minor.patch` format as that is expected by a regex
 # (`^FROM\s+\S+:\K[0-9]+\.[0-9]+\.[0-9]+`) used in other scripts
-FROM nginx:1.29.1-alpine-slim
+FROM nginx:1.29.2-alpine-slim
 
 RUN rm /etc/nginx/conf.d/*
 
