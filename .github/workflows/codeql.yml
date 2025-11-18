@@ -4,7 +4,8 @@ name: 'OGP CodeQL'
 # OGP CodeQL rules are irrelevant here as repo is not JS/TS-based.
 # Workflow will fail as a result of lack of JS/TS
 
-# on:
+on:
+ workflow_dispatch:
 #  push:
 #    branches: [ 'main' ]
 #  pull_request: 
