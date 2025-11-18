@@ -1,12 +1,16 @@
 name: 'OGP CodeQL'
 
-on:
- push:
-   branches: [ 'main' ]
- pull_request: 
-   branches: [ 'main' ]
- schedule:
-   - cron: '0 10 * * *'
+# This workflow is not used but is needed to prevent auto-
+# OGP CodeQL rules are irrelevant here as repo is not JS/TS-based.
+# Workflow will fail as a result of lack of JS/TS
+
+# on:
+#  push:
+#    branches: [ 'main' ]
+#  pull_request: 
+#    branches: [ 'main' ]
+#  schedule:
+#    - cron: '0 10 * * *'
 
 jobs:
  analyze:
